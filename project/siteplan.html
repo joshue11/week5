@@ -1,85 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Plan - MyFitnessJourney</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Week 5 Project</title>
 
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #f2f7f9;
-      color: #1a1a1a;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    h1, h2, h3 {
-      color: #0c5fa8;
-      font-family: "Poppins", sans-serif;
-    }
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 20px;
+            background-color: #f4f7fa;
+            color: #333;
+        }
 
-    .color-sample {
-      width: 80px;
-      height: 30px;
-      border: 1px solid #000;
-      margin-bottom: 10px;
-    }
-  </style>
+        h1, h2, h3 {
+            color: #2a5d94; 
+        }
+
+        .accent {
+            color: #d98324; 
+        }
+
+        .wireframe-box {
+            border: 2px solid #2a5d94;
+            padding: 20px;
+            margin: 10px 0;
+            background: white;
+        }
+
+        .wireframe-sketch {
+            font-family: monospace;
+            white-space: pre;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        a {
+            color: #2a5d94;
+        }
+    </style>
 </head>
-
 <body>
 
-  <h1>MyFitnessJourney – Website Planning Document</h1>
+    <h1>Website Planning Document</h1>
 
-  <section>
     <h2>Site Name</h2>
-    <p><strong>MyFitnessJourney</strong></p>
-    <p>Escogí este nombre porque representa un sitio web dedicado a ayudar a las personas a mejorar su salud y crear una rutina personal de ejercicios.</p>
-    <p><strong>Optional Domain:</strong> myfitnessjourney.fit</p>
-  </section>
+    <p><strong>HealthyLife Recipes Hub</strong></p>
+    <p>
+        I chose this name because the website will focus on providing simple, healthy, and beginner-friendly recipes
+        for people trying to improve their eating habits.
+    </p>
+    <p class="accent">Optional domain availability: healthylife-recipes.org</p>
 
-  <section>
     <h2>Site Purpose</h2>
-    <p>El propósito del sitio es proporcionar recomendaciones de ejercicio, rutinas personalizadas, información nutricional y una forma de seguimiento del progreso físico.</p>
-  </section>
+    <p>
+        This website provides a collection of healthy recipes, meal preparation tips,
+        nutrition information, and cooking guides for beginners. 
+        Users will be able to browse recipes by category and learn how to cook healthier meals at home.
+    </p>
 
-  <section>
     <h2>Scenarios</h2>
     <ul>
-      <li>¿Qué ejercicios puedo hacer para bajar de peso desde casa?</li>
-      <li>¿Dónde puedo ver una rutina recomendada para principiantes?</li>
+        <li>What healthy meals can I cook quickly after work?</li>
+        <li>Where can I find beginner-friendly recipes with simple ingredients?</li>
     </ul>
-  </section>
 
-  <section>
     <h2>Color Schema</h2>
+    <p>Selected Colors:</p>
+    <ul>
+        <li><strong>#2a5d94</strong> – Primary color used for headings and accents.</li>
+        <li><strong>#d98324</strong> – Accent color used for highlights and important text.</li>
+        <li><strong>#f4f7fa</strong> – Light background color for readability.</li>
+    </ul>
 
-    <p><strong>Primary Color – #0C5FA8</strong>  
-    (Se usará para encabezados, botones y acentos importantes)</p>
-    <div class="color-sample" style="background-color:#0C5FA8;"></div>
+    <p>This site plan document uses these exact colors for headings, accents, and background.</p>
 
-    <p><strong>Secondary Color – #F2F7F9</strong>  
-    (Se usará como color de fondo)</p>
-    <div class="color-sample" style="background-color:#F2F7F9;"></div>
-  </section>
-
-  <section>
     <h2>Typography</h2>
-    <p><strong>Poppins</strong> – Se usará para todo el sitio, incluyendo encabezados y texto del cuerpo por su claridad y estilo moderno.</p>
-  </section>
+    <ul>
+        <li><strong>Roboto</strong> – Used for all headings and body text.</li>
+    </ul>
+    <p>This site plan document uses the Roboto font throughout.</p>
 
-  <section>
     <h2>Wireframes</h2>
 
     <h3>Mobile View</h3>
-    <img src="wireframe-mobile.png" alt="Mobile wireframe sketch">
+    <div class="wireframe-box">
+        <div class="wireframe-sketch">
++---------------------------+
+|       LOGO / TITLE        |
++---------------------------+
+|        Navigation         |
++---------------------------+
+|       Featured Image      |
++---------------------------+
+|       Recipe Cards        |
+|       (Scroll Down)       |
++---------------------------+
+|         Footer            |
++---------------------------+
+        </div>
+    </div>
 
     <h3>Desktop View</h3>
-    <img src="wireframe-desktop.png" alt="Desktop wireframe sketch">
-  </section>
+    <div class="wireframe-box">
+        <div class="wireframe-sketch">
++----------------------------------------------------------+
+| LOGO            |            Navigation Menu             |
++----------------------------------------------------------+
+|                    Hero / Featured Image                 |
++----------------------------------------------------------+
+|   Recipe Card   |   Recipe Card   |   Recipe Card        |
+|                 |                 |                       |
++----------------------------------------------------------+
+|                        Footer                            |
++----------------------------------------------------------+
+        </div>
+    </div>
+
+    <h2>Validation</h2>
+    <p>HTML Validator: <a href="https://validator.w3.org/nu/">https://validator.w3.org/nu/</a></p>
+    <p>CSS Validator: <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a></p>
 
 </body>
 </html>
